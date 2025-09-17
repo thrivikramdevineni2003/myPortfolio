@@ -47,7 +47,7 @@ const Skills = ({ skills }: SkillsProps) => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Skills & Expertise</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 neon-text">Skills & Expertise</h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
         </motion.div>
 

@@ -36,7 +36,7 @@ const Projects = ({ projects }: ProjectsProps) => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Featured Works</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 neon-text">Featured Works</h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
           <p className="text-muted-foreground text-lg mt-6 max-w-2xl mx-auto">
             Showcase of my latest projects and innovative solutions

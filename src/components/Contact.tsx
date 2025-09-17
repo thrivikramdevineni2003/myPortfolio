@@ -70,7 +70,7 @@ const Contact = ({ contact }: ContactProps) => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Get In Touch</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 neon-text">Get In Touch</h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
           <p className="text-muted-foreground text-lg mt-6 max-w-2xl mx-auto">
             Ready to collaborate? Let's discuss your next project or just say hello.

@@ -49,7 +49,7 @@ const Services = ({ services }: ServicesProps) => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Services</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 neon-text">Services</h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
           <p className="text-muted-foreground text-lg mt-6 max-w-2xl mx-auto">
             Comprehensive solutions for your digital transformation needs

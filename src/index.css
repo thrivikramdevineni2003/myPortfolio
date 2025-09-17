@@ -157,18 +157,42 @@
     box-shadow: var(--glow-accent);
   }
 
-  /* Animated gradient text */
+  /* Animated gradient text - Fixed with fallback */
   .gradient-text {
-    background: var(--gradient-primary);
+    background: linear-gradient(135deg, hsl(188 100% 60%), hsl(270 80% 65%), hsl(320 90% 65%));
+    background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: gradient-shift 3s ease-in-out infinite;
+    color: hsl(188 100% 60%); /* Fallback color */
+    animation: gradient-flow 4s ease-in-out infinite;
   }
 
-  @keyframes gradient-shift {
-    0%, 100% { background: var(--gradient-primary); }
-    50% { background: var(--gradient-secondary); }
+  /* Fallback for browsers that don't support background-clip: text */
+  @supports not (-webkit-background-clip: text) {
+    .gradient-text {
+      color: hsl(188 100% 60%);
+      background: none;
+      animation: none;
+    }
+  }
+
+  @keyframes gradient-flow {
+    0%, 100% { 
+      background-position: 0% 50%; 
+    }
+    50% { 
+      background-position: 100% 50%; 
+    }
+  }
+
+  /* Alternative non-gradient title class */
+  .neon-text {
+    color: hsl(188 100% 60%);
+    text-shadow: 
+      0 0 10px hsla(188, 100%, 60%, 0.5),
+      0 0 20px hsla(188, 100%, 60%, 0.3),
+      0 0 30px hsla(188, 100%, 60%, 0.2);
   }
 
   /* Floating animation */
