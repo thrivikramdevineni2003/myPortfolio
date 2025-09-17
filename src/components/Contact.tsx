@@ -55,8 +55,14 @@ const Contact = ({ contact }: ContactProps) => {
   };
 
   return (
-    <section id="contact" className="py-20 relative">
-      <div className="container mx-auto px-6">
+    <section id="contact" className="py-20 relative section-bg">
+      {/* Subtle background elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
+        <div className="absolute top-0 left-1/4 w-88 h-88 bg-gradient-to-br from-accent/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-gradient-to-bl from-primary/5 to-transparent rounded-full blur-3xl"></div>
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -21,8 +21,14 @@ const Projects = ({ projects }: ProjectsProps) => {
   const otherProjects = projects.filter(project => !project.featured);
 
   return (
-    <section id="works" className="py-20 relative">
-      <div className="container mx-auto px-6">
+    <section id="works" className="py-20 relative section-bg">
+      {/* Subtle background elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
+        <div className="absolute top-1/4 left-1/5 w-96 h-96 bg-gradient-to-br from-primary/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/5 w-80 h-80 bg-gradient-to-bl from-secondary/5 to-transparent rounded-full blur-3xl"></div>
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -32,8 +32,14 @@ const Skills = ({ skills }: SkillsProps) => {
   };
 
   return (
-    <section id="skills" className="py-20 relative">
-      <div className="container mx-auto px-6">
+    <section id="skills" className="py-20 relative section-bg">
+      {/* Subtle background elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
+        <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-gradient-to-bl from-accent/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/3 left-1/5 w-56 h-56 bg-gradient-to-tr from-primary/5 to-transparent rounded-full blur-3xl"></div>
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

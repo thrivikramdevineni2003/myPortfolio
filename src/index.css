@@ -110,9 +110,16 @@
     @apply border-border;
   }
 
+  /* Improved background with smoother transitions */
   body {
     @apply bg-background text-foreground overflow-x-hidden;
-    background: var(--gradient-background);
+    background: 
+      radial-gradient(ellipse at top left, hsla(188, 100%, 60%, 0.03) 0%, transparent 50%),
+      radial-gradient(ellipse at top right, hsla(270, 80%, 65%, 0.03) 0%, transparent 50%),
+      radial-gradient(ellipse at bottom left, hsla(320, 90%, 65%, 0.03) 0%, transparent 50%),
+      radial-gradient(ellipse at bottom right, hsla(188, 100%, 60%, 0.03) 0%, transparent 50%),
+      linear-gradient(180deg, hsl(220, 27%, 4%) 0%, hsl(220, 27%, 6%) 100%);
+    background-attachment: fixed;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   }
 
@@ -174,13 +181,30 @@
     50% { transform: translateY(-10px); }
   }
 
-  /* Pulse glow animation */
-  .pulse-glow {
-    animation: pulse-glow 2s ease-in-out infinite;
+  /* Section dividers and backgrounds */
+  .section-bg {
+    position: relative;
   }
 
-  @keyframes pulse-glow {
-    0%, 100% { box-shadow: var(--glow-primary); }
-    50% { box-shadow: 0 0 30px hsla(188, 100%, 60%, 0.8); }
+  .section-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, hsla(188, 100%, 60%, 0.3) 50%, transparent 100%);
+  }
+
+  /* Smooth section transitions */
+  .section-transition {
+    background: linear-gradient(180deg, 
+      hsla(220, 27%, 4%, 0) 0%, 
+      hsla(220, 27%, 5%, 0.5) 50%, 
+      hsla(220, 27%, 4%, 0) 100%
+    );
+    height: 100px;
+    position: relative;
+    z-index: 1;
   }
 }
