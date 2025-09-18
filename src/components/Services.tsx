@@ -34,68 +34,56 @@ const Services = ({ services }: ServicesProps) => {
   };
 
   return (
-    <section id="services" className="py-20 relative section-bg">
-      {/* Subtle background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
-        <div className="absolute top-0 right-1/3 w-80 h-80 bg-gradient-to-bl from-secondary/5 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-1/3 w-64 h-64 bg-gradient-to-tr from-accent/5 to-transparent rounded-full blur-3xl"></div>
-      </div>
-      
-      <div className="container mx-auto px-6 relative z-10">
+    <section id="services" className="py-32">
+      <div className="container mx-auto px-6">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 neon-text">Services</h2>
-          <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
-          <p className="text-muted-foreground text-lg mt-6 max-w-2xl mx-auto">
+          <h2 className="text-5xl md:text-6xl font-bold mb-8">Diverse Services To Meet Needs</h2>
+          <div className="w-24 h-px bg-foreground mx-auto mb-6"></div>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Comprehensive solutions for your digital transformation needs
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: index * 0.1 }}
             >
-              <Card className={`glass ${getGlowClass(index)} transition-all duration-300 h-full group cursor-pointer`}>
-                <CardContent className="p-8">
-                  <div className="flex items-start gap-4 mb-6">
-                    <div className="p-3 rounded-xl glass group-hover:glow-primary transition-all duration-300 text-primary">
-                      {getIcon(service.icon)}
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold mb-2 text-foreground group-hover:text-primary transition-colors duration-300">
-                        {service.title}
-                      </h3>
-                      <p className="text-muted-foreground leading-relaxed">
-                        {service.description}
-                      </p>
-                    </div>
+              <Card className="p-8 text-center h-full border-border/20 hover:border-border/40 transition-all duration-300 group">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-muted/20 flex items-center justify-center group-hover:bg-muted/40 transition-colors duration-300">
+                  {getIcon(service.icon)}
+                </div>
+                
+                <h3 className="text-xl font-semibold mb-4">
+                  {service.title}
+                </h3>
+                
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  {service.description}
+                </p>
+
+                <div className="space-y-3">
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    {service.features.slice(0, 3).map((feature, featureIndex) => (
+                      <Badge 
+                        key={feature}
+                        variant="outline" 
+                        className="text-xs px-2 py-1"
+                      >
+                        {feature}
+                      </Badge>
+                    ))}
                   </div>
-                  
-                  <div className="space-y-3">
-                    <h4 className="text-sm font-semibold text-primary">Key Features:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {service.features.map((feature, featureIndex) => (
-                        <Badge 
-                          key={feature}
-                          variant="outline" 
-                          className="glass text-xs px-2 py-1 group-hover:glow-secondary transition-all duration-300"
-                        >
-                          {feature}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-                </CardContent>
+                </div>
               </Card>
             </motion.div>
           ))}

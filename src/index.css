@@ -110,16 +110,10 @@
     @apply border-border;
   }
 
-  /* Improved background with smoother transitions */
+  /* Clean minimal background */
   body {
     @apply bg-background text-foreground overflow-x-hidden;
-    background: 
-      radial-gradient(ellipse at top left, hsla(188, 100%, 60%, 0.03) 0%, transparent 50%),
-      radial-gradient(ellipse at top right, hsla(270, 80%, 65%, 0.03) 0%, transparent 50%),
-      radial-gradient(ellipse at bottom left, hsla(320, 90%, 65%, 0.03) 0%, transparent 50%),
-      radial-gradient(ellipse at bottom right, hsla(188, 100%, 60%, 0.03) 0%, transparent 50%),
-      linear-gradient(180deg, hsl(220, 27%, 4%) 0%, hsl(220, 27%, 6%) 100%);
-    background-attachment: fixed;
+    background: hsl(220, 27%, 4%);
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   }
 
