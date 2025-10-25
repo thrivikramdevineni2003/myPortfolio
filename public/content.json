@@ -79,15 +79,6 @@
       "demo": "",
       "image": "/project-1.jpg",
       "featured": true
-    },
-    {
-      "title": "Used Car Price Prediction",
-      "description": "Machine learning model for accurate car price predictions with robust dataset validation and performance testing",
-      "technologies": ["Python", "Machine Learning", "Data Analysis", "Scikit-learn"],
-      "github": "",
-      "demo": "",
-      "image": "/project-2.jpg",
-      "featured": true
     }
   ],
   "contact": {
