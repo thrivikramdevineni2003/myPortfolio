@@ -1,115 +1,103 @@
 {
   "personal": {
-    "name": "Venkat Seshu Chembeti",
-    "title": "Cybersecurity & DevOps Enthusiast",
-    "subtitle": "Building secure, scalable digital solutions"
+    "name": "Devineni Thrivikram",
+    "title": "AWS Certified Cloud Practitioner",
+    "subtitle": "Building scalable cloud solutions with AI & Data Science"
   },
   "about": {
-    "bio": "Aspiring professional with strong knowledge in cybersecurity, DevOps, and cloud technologies. Passionate about creating secure, efficient systems and developing innovative web solutions. Experienced in automation, security analysis, and modern development practices.",
+    "bio": "Recent B.Tech graduate in AI and Data Science with strong expertise in cloud computing, data analysis, and machine learning. AWS Certified Cloud Practitioner with hands-on experience in EC2, S3, IAM, and CloudWatch. Passionate about leveraging cloud technologies and AI to build efficient, scalable solutions.",
     "education": [
       {
         "degree": "Bachelor of Technology",
-        "field": "Computer Science",
-        "institution": "Your University",
-        "year": "2024"
+        "field": "Artificial Intelligence and Data Science",
+        "institution": "Malla Reddy College of Engineering and Technology",
+        "year": "2021 - 2025"
+      },
+      {
+        "degree": "Intermediate Education",
+        "field": "MPC",
+        "institution": "Narayana Jr College",
+        "year": "2019 - 2021"
       }
     ],
     "certifications": [
-      "Azure DevOps Fundamentals",
-      "Cybersecurity Fundamentals",
-      "Cloud Security Basics"
+      "AWS Cloud Practitioner (CLFC02)",
+      "AWS Re/Start Certificate - Tech Mahindra SMART Academy",
+      "Cisco Python Programming Essentials"
     ]
   },
   "skills": [
     {
-      "category": "Cybersecurity",
-      "items": ["SIEM", "Vulnerability Analysis", "Security Assessment", "Incident Response", "Threat Detection"]
-    },
-    {
-      "category": "DevOps & Cloud",
-      "items": ["Azure DevOps", "OCI", "CI/CD", "Infrastructure as Code", "Docker", "Kubernetes"]
+      "category": "Cloud & DevOps",
+      "items": ["AWS EC2", "S3", "Lambda", "IAM", "CloudWatch", "AWS CLI", "Docker"]
     },
     {
       "category": "Programming",
-      "items": ["Python", "JavaScript", "Django", "React", "Node.js", "TypeScript"]
+      "items": ["Python", "Java", "HTML", "SQL", "MySQL"]
     },
     {
-      "category": "Tools & Technologies",
-      "items": ["Linux", "Git", "Jenkins", "Terraform", "Ansible", "Monitoring Tools"]
+      "category": "AI & Machine Learning",
+      "items": ["CNN", "YOLO", "Neural Networks", "Machine Learning", "Data Analysis"]
+    },
+    {
+      "category": "Soft Skills",
+      "items": ["Problem Solving", "Communication", "Teamwork", "Quick Learner", "Adaptability"]
     }
   ],
   "services": [
     {
-      "title": "Web Development",
-      "description": "Building modern, responsive web applications with cutting-edge technologies",
-      "icon": "code",
-      "features": ["Responsive Design", "Modern Frameworks", "Performance Optimization", "User Experience"]
-    },
-    {
-      "title": "Cybersecurity Assessment",
-      "description": "Comprehensive security analysis and vulnerability assessment services",
-      "icon": "shield",
-      "features": ["Vulnerability Scanning", "Risk Assessment", "Security Audits", "Compliance Check"]
-    },
-    {
-      "title": "DevOps & Automation",
-      "description": "Streamlining development processes with automation and best practices",
-      "icon": "settings",
-      "features": ["CI/CD Pipelines", "Infrastructure Automation", "Monitoring Setup", "Deployment Strategies"]
-    },
-    {
       "title": "Cloud Solutions",
-      "description": "Designing and implementing scalable cloud infrastructure",
+      "description": "Designing and implementing scalable AWS cloud infrastructure with best practices",
       "icon": "cloud",
-      "features": ["Cloud Migration", "Architecture Design", "Cost Optimization", "Security Implementation"]
+      "features": ["AWS Architecture", "EC2 & S3 Management", "IAM Security", "CloudWatch Monitoring"]
+    },
+    {
+      "title": "AI & Machine Learning",
+      "description": "Building intelligent systems using neural networks and deep learning frameworks",
+      "icon": "code",
+      "features": ["CNN Models", "YOLO Detection", "Data Analysis", "Model Training"]
+    },
+    {
+      "title": "Data Engineering",
+      "description": "Managing and analyzing large datasets with efficient data processing pipelines",
+      "icon": "settings",
+      "features": ["Data Validation", "MySQL Database", "Data Quality", "ETL Processes"]
+    },
+    {
+      "title": "DevOps Practices",
+      "description": "Implementing containerization and automation for streamlined deployments",
+      "icon": "shield",
+      "features": ["Docker Containers", "CI/CD Basics", "Infrastructure Setup", "Automation"]
     }
   ],
   "projects": [
     {
-      "title": "E-Paper CMS",
-      "description": "A content management system for digital displays with real-time updates",
-      "technologies": ["Django", "Python", "PostgreSQL", "Redis"],
-      "github": "https://github.com/venkat/e-paper-cms",
+      "title": "Skincare Product Recommendation System",
+      "description": "AI-powered facial analysis system using CNN and YOLO models for personalized skincare recommendations with comprehensive dataset validation",
+      "technologies": ["Python", "CNN", "YOLO", "Neural Networks", "TensorFlow"],
+      "github": "",
       "demo": "",
       "image": "/project-1.jpg",
       "featured": true
     },
     {
-      "title": "Blockchain Bug Bounty Tracker",
-      "description": "Platform for tracking and managing blockchain security vulnerabilities",
-      "technologies": ["React", "Node.js", "Web3", "MongoDB"],
-      "github": "https://github.com/venkat/bug-bounty-tracker",
+      "title": "Used Car Price Prediction",
+      "description": "Machine learning model for accurate car price predictions with robust dataset validation and performance testing",
+      "technologies": ["Python", "Machine Learning", "Data Analysis", "Scikit-learn"],
+      "github": "",
       "demo": "",
       "image": "/project-2.jpg",
       "featured": true
-    },
-    {
-      "title": "Security Automation Suite",
-      "description": "Automated security scanning and reporting tools",
-      "technologies": ["Python", "Bash", "Docker", "Jenkins"],
-      "github": "https://github.com/venkat/security-suite",
-      "demo": "",
-      "image": "/project-3.jpg",
-      "featured": false
-    },
-    {
-      "title": "DevOps Dashboard",
-      "description": "Real-time monitoring dashboard for infrastructure and applications",
-      "technologies": ["React", "Express", "InfluxDB", "Grafana"],
-      "github": "https://github.com/venkat/devops-dashboard",
-      "demo": "",
-      "image": "/project-4.jpg",
-      "featured": false
     }
   ],
   "contact": {
-    "email": "venkatseshu006@gmail.com",
-    "phone": "+1 (555) 123-4567",
-    "location": "Your City, Country",
+    "email": "thrivikramdevineni1@gmail.com",
+    "phone": "+91 9391748978",
+    "location": "Hyderabad, India",
     "social": {
-      "linkedin": "https://linkedin.com/in/venkatseshu006",
-      "github": "https://github.com/venkat",
-      "twitter": "https://twitter.com/venkat"
+      "linkedin": "https://linkedin.com/in/thrivikram-devineni",
+      "github": "https://github.com/thrivikram",
+      "twitter": ""
     }
   }
 }
