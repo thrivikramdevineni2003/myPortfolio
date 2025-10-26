@@ -23,82 +23,36 @@ A stunning, modern portfolio website with a futuristic design that can be easily
 
 ## 🚀 Quick Start
 
-1. **Install Dependencies**
-   ```bash
-   npm install
-   ```
+```markdown
+# Project — Futuristic Portfolio Template (Cleaned)
 
-2. **Start Development Server**
-   ```bash
-   npm run dev
-   ```
+This repository contains a customizable portfolio website built with React, TypeScript, TailwindCSS and Framer Motion.
 
-3. **Customize Content**
-   Edit `public/content.json` to update your portfolio content
+Notes about this file:
+- The original Lovable platform metadata and deployment instructions were removed to keep this repo focused and platform-agnostic.
+- Customize your portfolio by editing `public/content.json`.
+- The project is licensed under the MIT License (see `LICENSE`).
 
-4. **Deploy**
-   ```bash
-   npm run build
-   ```
+## Quick start
 
-## 📝 Customization Guide
+1. Install dependencies:
 
-### Updating Content
-
-All content is managed through the `public/content.json` file. Here's what you can customize:
-
-#### Personal Information
-```json
-{
-  "personal": {
-    "name": "Your Name",
-    "title": "Your Professional Title",
-    "subtitle": "Your tagline or brief description"
-  }
-}
+```bash
+npm install
 ```
 
-#### About Section
-```json
-{
-  "about": {
-    "bio": "Your professional bio...",
-    "education": [
-      {
-        "degree": "Your Degree",
-        "field": "Your Field",
-        "institution": "University Name",
-        "year": "2024"
-      }
-    ],
-    "certifications": ["Cert 1", "Cert 2", "Cert 3"]
-  }
-}
+2. Start development server:
+
+```bash
+npm run dev
 ```
 
-#### Skills
-```json
-{
-  "skills": [
-    {
-      "category": "Category Name",
-      "items": ["Skill 1", "Skill 2", "Skill 3"]
-    }
-  ]
-}
-```
+## Where to edit content
 
-#### Services
-```json
-{
-  "services": [
-    {
-      "title": "Service Name",
-      "description": "Service description...",
-      "icon": "code", // Options: code, shield, settings, cloud
-      "features": ["Feature 1", "Feature 2", "Feature 3"]
-    }
-  ]
+- `public/content.json` — main content for personal info, projects, skills, and contact.
+- `src/components/` — UI components for each section.
+
+```
 }
 ```
 
